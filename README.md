@@ -2,6 +2,8 @@
 
 Welcome to my culinary adventure where a boring old diet plan turns into a **premium cookbook**! 📚✨
 
+👉 [**Check it out here**](https://nehar-shinz.github.io/Calorie-Deficit-Diet/Pages/MealPlan) 👈
+
 ## 🚀 The Backstory
 
 I started with a simple goal: create a calorie deficit meal plan for myself. But then I thought, "Hey, why not make it into a snazzy webpage that looks like a cookbook?" 🤷‍♂️ So, I whipped up some AI-generated images using Microsoft Bing Image Creator to make it look all fancy and professional. And voilà, here we are!
