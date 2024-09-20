@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calorie Deficit Meal Plan</title>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Merriweather:wght@400&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Merriweather", serif;
+            background-color: #f2e7d5;
+            /* Stronger beige background */
+            color: #4f4534;
+            /* Dark brown text for a premium feel */
+            line-height: 1.6;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #f8f1e4;
+            /* Softer beige for the header */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            font-family: "Caveat", cursive;
+            /* Handwriting font for title */
+            font-size: 3.25rem;
+            color: #4f4534;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            color: #8c7d68;
+            /* Muted brown for the subtitle */
+        }
+
+        section.meal-plan {
+            max-width: 1000px;
+            margin: 50px auto;
+            padding: 20px;
+        }
+
+        .day-container {
+            margin-bottom: 40px;
+        }
+
+        .day-container h2 {
+            font-family: "Merriweather", serif;
+            /* Regular serif font for day headers */
+            font-size: 2.5rem;
+            color: #4f4534;
+            margin-bottom: 20px;
+            text-align: center;
+            border-bottom: 2px solid #d2c5a9;
+            /* Light beige border */
+            padding-bottom: 10px;
+        }
+
+        .meal {
+            display: flex;
+            flex-direction: column;
+            background-color: #f8f1e4;
+            /* Softer beige meal card background */
+            margin-bottom: 20px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+        }
+
+        .meal img {
+            max-width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            margin-bottom: 15px;
+        }
+
+        .meal-details {
+            max-width: 100%;
+        }
+
+        .meal-details h3 {
+            font-family: "Caveat", cursive;
+            /* Handwriting font for meal titles */
+            font-size: 2.2rem;
+            color: #4f4534;
+            margin-bottom: 10px;
+        }
+
+        .meal-details p {
+            margin-bottom: 8px;
+            color: #6e6351;
+            /* Soft brown for details */
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px;
+            /* Reduced padding */
+            background-color: #4f4534;
+            /* Dark brown footer */
+            color: #f8f1e4;
+            /* Softer beige text */
+            margin-top: 50px;
+            font-size: 0.9rem;
+            /* Reduced font size */
+        }
+
+        /* Mobile Responsiveness */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2.5rem;
+            }
+
+            header p {
+                font-size: 1rem;
+            }
+
+            .day-container h2 {
+                font-size: 2rem;
+            }
+
+            .meal {
+                flex-direction: column;
+                padding: 15px;
+            }
+
+            .meal img {
+                max-width: 100%;
+            }
+
+            .meal-details h3 {
+                font-size: 1.5rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header h1 {
+                font-size: 2rem;
+            }
+
+            header p {
+                font-size: 0.9rem;
+            }
+
+            .day-container h2 {
+                font-size: 1.5rem;
+            }
+
+            .meal-details h3 {
+                font-size: 1.4rem;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <h1>Calorie Deficit Meal Plan</h1>
+        <p>Your guide to flavorful, nutritious meals, crafted with ease.</p>
+    </header>
+
+    <section class="meal-plan">
+        <!-- Day 1 -->
+        <div class="day-container">
+            <h2>Day 1</h2>
+            <div class="meal">
+                <img src="https://raw.githubusercontent.com/Nehar-Shinz/Calorie-deficit-Diet/main/Pictures/Vegetable%20Upma.jpg"
+                    alt="Vegetable Upma" />
+                <div class="meal-details">
+                    <h3>Meal 1: Vegetable Upma</h3>
+                    <p><strong>Portion:</strong> 1 cup</p>
+                    <p><strong>Calories:</strong> ~200 kcal</p>
+                    <p><strong>Nutrition:</strong> 5g protein, 6g fat, 32g carbs</p>
+                    <p>
+                        <strong>Ingredients:</strong> Semolina (rava), onions, tomatoes,
+                        peas, carrots, mustard seeds, curry leaves.
+                    </p>
+                    <p>
+                        <strong>Preparation:</strong> Toast semolina, sauté veggies, and
+                        spices, add water, and cook until soft.
+                    </p>
+                    <p>
+                        <strong>Benefits:</strong> Light and filling with fiber from
+                        vegetables.
+                    </p>
+                </div>
+            </div>
+
+            <div class="meal">
+                <img src="https://raw.githubusercontent.com/Nehar-Shinz/Calorie-deficit-Diet/main/Pictures/Paneer%20Bhurji.jpg"
+                    alt="Paneer Bhurji" />
+                <div class="meal-details">
+                    <h3>Meal 2: Paneer Bhurji with Roti</h3>
+                    <p>
+                        <strong>Portion:</strong> Paneer Bhurji (100g paneer) + 1 roti
+                    </p>
+                    <p><strong>Calories:</strong> ~300 kcal</p>
+                    <p><strong>Nutrition:</strong> 15g protein, 8g fat, 35g carbs</p>
+                    <p>
+                        <strong>Ingredients:</strong> Crumbled paneer, onions, tomatoes,
+                        green chilies, turmeric, cumin, whole wheat roti.
+                    </p>
+                    <p>
+                        <strong>Preparation:</strong> Sauté onions and tomatoes with
+                        spices, add paneer, and serve with roti.
+                    </p>
+                    <p>
+                        <strong>Benefits:</strong> Protein-rich and satisfying for both
+                        non-vegetarian and vegetarian meals.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="day-container">
+            <h2>Day 2</h2>
+            <div class="meal">
+                <img src="https://raw.githubusercontent.com/Nehar-Shinz/Calorie-deficit-Diet/main/Pictures/Masala%20Oats.jpg"
+                    alt="Masala Oats" />
+                <div class="meal-details">
+                    <h3>Meal 1: Masala Oats</h3>
+                    <p><strong>Portion:</strong> 1 cup cooked oats with vegetables</p>
+                    <p><strong>Calories:</strong> ~180 kcal</p>
+                    <p><strong>Nutrition:</strong> 7g protein, 5g fat, 25g carbs</p>
+                    <p>
+                        <strong>Ingredients:</strong> Oats, onions, tomatoes, peas, carrots, cumin, coriander.
+                    </p>
+                    <p>
+                        <strong>Preparation:</strong> Sauté the vegetables with your favorite spices. Add oats and
+                        water, and cook until the oats are tender and the liquid has been absorbed.
+                    </p>
+                    <p><strong>Benefits:</strong> High in fiber, filling, and quick.</p>
+                </div>
+            </div>
+
+            <div class="meal">
+                <img src="https://raw.githubusercontent.com/Nehar-Shinz/Calorie-deficit-Diet/main/Pictures/Grilled%20Wrap.jpg"
+                    alt="Grilled Chicken Wrap" />
+                <div class="meal-details">
+                    <h3>Meal 2: Grilled Chicken Wrap / Paneer Wrap</h3>
+                    <p>
+                        <strong>Portion:</strong> 100g chicken or paneer + 1 whole wheat
+                        tortilla
+                    </p>
+                    <p>
+                        <strong>Calories:</strong> ~350 kcal (chicken) / ~400 kcal
+                        (paneer)
+                    </p>
+                    <p>
+                        <strong>Nutrition:</strong> 25g protein (chicken) / 15g protein
+                        (paneer), 8g fat, 30g carbs
+                    </p>
+                    <p>
+                        <strong>Ingredients:</strong> Grilled chicken breast or paneer,
+                        whole wheat tortilla, lettuce, cucumber, onions, yogurt dressing.
+                    </p>
+                    <p>
+                        <strong>Preparation:</strong> Grill the chicken or paneer, wrap in
+                        a tortilla with veggies and yogurt dressing.
+                    </p>
+                    <p>
+                        <strong>Benefits:</strong> Balanced with lean protein and veggies.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Day 4 -->
+        <div class="day-container">
+            <h2>Day 4</h2>
+            <div class="meal">
+                <img src="https://raw.githubusercontent.com/Nehar-Shinz/Calorie-deficit-Diet/main/Pictures/Roti%20Sabzi.jpg"
+                    alt="Roti with Vegetable Sabzi" />
+                <div class="meal-details">
+                    <h3>Meal 1: Roti with Vegetable Sabzi</h3>
+                    <p><strong>Portion:</strong> 1 roti + 1 cup sabzi</p>
+                    <p><strong>Calories:</strong> ~250 kcal</p>
+                    <p><strong>Nutrition:</strong> 7g protein, 6g fat, 40g carbs</p>
+                    <p>
+                        <strong>Ingredients:</strong> Whole wheat roti, mixed vegetable
+                        sabzi (cauliflower, peas, carrots, or okra).
+                    </p>
+                    <p>
+                        <strong>Preparation:</strong> Sauté vegetables with spices, serve
+                        with roti.
+                    </p>
+                    <p>
+                        <strong>Benefits:</strong> Fiber-rich, balanced, and nutritious
+                        meal.
+                    </p>
+                </div>
+            </div>
+
+            <div class="meal">
+                <img src="https://raw.githubusercontent.com/Nehar-Shinz/Calorie-deficit-Diet/main/Pictures/Egg%20Bhurji.jpg"
+                    alt="Egg Bhurji with Toast" />
+                <div class="meal-details">
+                    <h3>Meal 2: Egg Bhurji with Toast / Paneer Bhurji with Toast</h3>
+                    <p>
+                        <strong>Portion:</strong> 2 eggs or 100g paneer + 1 slice whole
+                        wheat toast
+                    </p>
+                    <p><strong>Calories:</strong> ~300 kcal</p>
+                    <p><strong>Nutrition:</strong> 20g protein, 12g fat, 25g carbs</p>
+                    <p>
+                        <strong>Ingredients:</strong> Eggs or paneer, onions, tomatoes,
+                        green chilies, turmeric, cumin, whole wheat toast.
+                    </p>
+                    <p>
+                        <strong>Preparation:</strong> Scramble eggs or paneer with sautéed
+                        veggies and serve with toast.
+                    </p>
+                    <p>
+                        <strong>Benefits:</strong> High in protein, low in carbs, and easy
+                        to prepare for both non-vegetarian and vegetarian options.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Day 5 -->
+        <div class="day-container">
+            <h2>Day 5</h2>
+            <div class="meal">
+                <img src="https://raw.githubusercontent.com/Nehar-Shinz/Calorie-deficit-Diet/main/Pictures/Curd%20Rice.jpg"
+                    alt="Curd Rice" />
+                <div class="meal-details">
+                    <h3>Meal 1: Curd Rice</h3>
+                    <p><strong>Portion:</strong> 1 cup</p>
+                    <p><strong>Calories:</strong> ~250 kcal</p>
+                    <p><strong>Nutrition:</strong> 7g protein, 5g fat, 35g carbs</p>
+                    <p>
+                        <strong>Ingredients:</strong> Cooked rice, curd, mustard seeds,
+                        curry leaves, green chilies.
+                    </p>
+                    <p>
+                        <strong>Preparation:</strong> Mix cooked rice with curd, temper
+                        with mustard seeds and curry leaves.
+                    </p>
+                    <p>
+                        <strong>Benefits:</strong> Cooling, probiotic-rich, and good for
+                        digestion.
+                    </p>
+                </div>
+            </div>
+
+            <div class="meal">
+                <img src="https://raw.githubusercontent.com/Nehar-Shinz/Calorie-deficit-Diet/main/Pictures/Veg%20Pulao.jpg"
+                    alt="Vegetable Pulao with Boiled Egg" />
+                <div class="meal-details">
+                    <h3>Meal 2: Vegetable Pulao with Boiled Egg / Paneer</h3>
+                    <p>
+                        <strong>Portion:</strong> 1 cup pulao + 1 boiled egg or 100g
+                        grilled paneer
+                    </p>
+                    <p>
+                        <strong>Calories:</strong> ~350 kcal (egg) / ~400 kcal (paneer)
+                    </p>
+                    <p>
+                        <strong>Nutrition:</strong> 12g protein (egg) / 15g protein
+                        (paneer), 8g fat, 40g carbs
+                    </p>
+                    <p>
+                        <strong>Ingredients:</strong> Basmati rice, mixed vegetables,
+                        cumin, coriander, boiled egg or grilled paneer.
+                    </p>
+                    <p>
+                        <strong>Preparation:</strong> Cook rice with vegetables and serve
+                        with a boiled egg or paneer.
+                    </p>
+                    <p>
+                        <strong>Benefits:</strong> Balanced carbs, veggies, and protein.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Day 6 -->
+        <div class="day-container">
+            <h2>Day 6</h2>
+            <div class="meal">
+                <img src="https://raw.githubusercontent.com/Nehar-Shinz/Calorie-deficit-Diet/main/Pictures/Aloo%20Paratha.jpg"
+                    alt="Aloo Paratha" />
+                <div class="meal-details">
+                    <h3>Meal 1: Aloo Paratha</h3>
+                    <p><strong>Portion:</strong> 1 paratha</p>
+                    <p><strong>Calories:</strong> ~250 kcal</p>
+                    <p><strong>Nutrition:</strong> 5g protein, 8g fat, 40g carbs</p>
+                    <p>
+                        <strong>Ingredients:</strong> Whole wheat flour, boiled potatoes,
+                        cumin, coriander, green chilies.
+                    </p>
+                    <p>
+                        <strong>Preparation:</strong> Knead whole wheat flour, stuff with
+                        spiced mashed potatoes, and roll. Cook with minimal oil.
+                    </p>
+                    <p>
+                        <strong>Benefits:</strong> Comfort food with healthier preparation
+                        and controlled portion sizes.
+                    </p>
+                </div>
+            </div>
+
+            <div class="meal">
+                <img src="https://raw.githubusercontent.com/Nehar-Shinz/Calorie-deficit-Diet/main/Pictures/Chicken%20Salad.jpg"
+                    alt="Tandoori Chicken with Salad" />
+                <div class="meal-details">
+                    <h3>Meal 2: Tandoori Chicken / Paneer with Salad</h3>
+                    <p>
+                        <strong>Portion:</strong> 150g chicken or 100g paneer + 1 cup
+                        salad
+                    </p>
+                    <p>
+                        <strong>Calories:</strong> ~350 kcal (chicken) / ~400 kcal
+                        (paneer)
+                    </p>
+                    <p>
+                        <strong>Nutrition:</strong> 30g protein (chicken) / 15g protein
+                        (paneer), 10g fat, 10g carbs
+                    </p>
+                    <p>
+                        <strong>Ingredients:</strong> Chicken drumsticks or paneer,
+                        yogurt, tandoori masala, lemon, lettuce, cucumber, onions.
+                    </p>
+                    <p>
+                        <strong>Preparation:</strong> Marinate chicken or paneer in yogurt
+                        and spices, grill or bake. Serve with salad.
+                    </p>
+                    <p>
+                        <strong>Benefits:</strong> High-protein, low-carb meal suitable
+                        for both non-vegetarian and vegetarian diets.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Day 7 -->
+        <div class="day-container">
+            <h2>Day 7</h2>
+            <div class="meal">
+                <img src="https://raw.githubusercontent.com/Nehar-Shinz/Calorie-deficit-Diet/main/Pictures/Roti%20Veg%20Curry.jpg"
+                    alt="Roti with Mixed Vegetable Curry" />
+                <div class="meal-details">
+                    <h3>Meal 1: Roti with Mixed Vegetable Curry</h3>
+                    <p><strong>Portion:</strong> 1 roti + 1 cup curry</p>
+                    <p><strong>Calories:</strong> ~250 kcal</p>
+                    <p><strong>Nutrition:</strong> 7g protein, 6g fat, 40g carbs</p>
+                    <p>
+                        <strong>Ingredients:</strong> Whole wheat roti, mixed vegetables
+                        (cauliflower, peas, beans) in a tomato-based gravy.
+                    </p>
+                    <p>
+                        <strong>Preparation:</strong> Cook vegetables with onions,
+                        tomatoes, and spices. Serve with roti.
+                    </p>
+                    <p><strong>Benefits:</strong> Simple, nutritious, and light.</p>
+                </div>
+            </div>
+
+            <div class="meal">
+                <img src="https://raw.githubusercontent.com/Nehar-Shinz/Calorie-deficit-Diet/main/Pictures/Grilled%20Fish.jpg"
+                    alt="Grilled Fish with Steamed Vegetables" />
+                <div class="meal-details">
+                    <h3>Meal 2: Grilled Fish / Paneer with Steamed Vegetables</h3>
+                    <p>
+                        <strong>Portion:</strong> 150g fish or 100g paneer + 1 cup steamed
+                        veggies
+                    </p>
+                    <p>
+                        <strong>Calories:</strong> ~300 kcal (fish) / ~350 kcal (paneer)
+                    </p>
+                    <p>
+                        <strong>Nutrition:</strong> 30g protein (fish) / 15g protein
+                        (paneer), 8g fat, 15g carbs
+                    </p>
+                    <p>
+                        <strong>Ingredients:</strong> White fish (like tilapia) or paneer,
+                        bell peppers, carrots, broccoli, lemon juice.
+                    </p>
+                    <p>
+                        <strong>Preparation:</strong> Grill fish or paneer, steam
+                        vegetables, and season with lemon juice.
+                    </p>
+                    <p>
+                        <strong>Benefits:</strong> A light, high-protein meal for both
+                        diets.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>
+            &copy; 2024 Calorie Deficit Meal Plan by 
+            <br>
+            <span
+                style="font-family: 'Caveat', cursive; font-size: 1.5rem;">Nehar Shinz</span>
+            <br>
+                All Rights Reserved.
+        </p>
+        <br>
+        <p>
+            The images presented on this website are generated using AI technology from Microsoft Bing Image Creator and
+            may not accurately represent real dishes. Additionally, the nutritional and calorie information provided may
+            not be precise. This content is intended for artistic purposes only and should not be considered as
+            nutritional
+            or health advice.
+        </p>
+    </footer>
+
+</body>
+
+</html>
