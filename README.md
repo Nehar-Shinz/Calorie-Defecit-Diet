@@ -47,7 +47,7 @@ Feel free to reach out if you have any questions or just want to chat about food
 
 
 
-[![Nehar Shinz](https://img.shields.io/badge/Nehar_Shinz-E4080A.svg?style=for-the-badge&logo=GitHub&logoColor=white)](https://github.com/Nehar-Shinz)  [![Calorie Deficit Diet Repo](https://img.shields.io/badge/Project_Repo-E4080A.svg?style=for-the-badge&logo=GitHub&logoColor=white)](https://github.com/Nehar-Shinz/Calorie-Defecit-Diet)
+[![Nehar Shinz](https://img.shields.io/badge/Nehar_Shinz-E4080A.svg?style=for-the-badge&logo=GitHub&logoColor=white)](https://github.com/Nehar-Shinz)  [![Calorie Deficit Diet Repo](https://img.shields.io/badge/Project_Repo-E4080A.svg?style=for-the-badge&logo=GitHub&logoColor=white)](https://github.com/Nehar-Shinz/Calorie-Deficit-Diet)
 
 
 
