@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calorie Deficit Meal Plan</title>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@300;400;700&display=swap" rel="stylesheet" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Chilanka&family=Manjari:wght@400&display=swap');
+    
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+    
+        body {
+            font-family: "Manjari", sans-serif;
+            background-color: #f2e7d5;
+            /* Stronger beige background */
+            color: #4f4534;
+            /* Dark brown text for a premium feel */
+            line-height: 1.6;
+            font-size: 1rem;
+        }
+    
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #f8f1e4;
+            /* Softer beige for the header */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+    
+        header h1 {
+            font-family: "Chilanka", cursive;
+            /* Handwriting font (Chilanka) for title */
+            font-size: 3.25rem;
+            color: #4f4534;
+        }
+    
+        header p {
+            font-family: "Manjari", sans-serif;
+            /* Regular font for the subtitle */
+            font-size: 1.2rem;
+            color: #8c7d68;
+            /* Muted brown for the subtitle */
+        }
+    
+        section.meal-plan {
+            max-width: 1000px;
+            margin: 50px auto;
+            padding: 20px;
+        }
+    
+        .day-container {
+            margin-bottom: 40px;
+        }
+    
+        .day-container h2 {
+            font-family: "Manjari", sans-serif;
+            /* Regular serif font for day headers */
+            font-size: 2.5rem;
+            color: #4f4534;
+            margin-bottom: 20px;
+            text-align: center;
+            border-bottom: 2px solid #d2c5a9;
+            /* Light beige border */
+            padding-bottom: 10px;
+        }
+    
+        .meal {
+            display: flex;
+            flex-direction: column;
+            background-color: #f8f1e4;
+            /* Softer beige meal card background */
+            margin-bottom: 20px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+        }
+    
+        .meal img {
+            max-width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            margin-bottom: 15px;
+        }
+    
+        .meal-details {
+            max-width: 100%;
+        }
+    
+        .meal-details h3 {
+            font-family: "Chilanka", cursive;
+            /* Handwriting font (Chilanka) for meal titles */
+            font-size: 2.2rem;
+            color: #4f4534;
+            margin-bottom: 10px;
+        }
+    
+        .meal-details p {
+            font-family: "Manjari", sans-serif;
+            margin-bottom: 8px;
+            color: #6e6351;
+            /* Soft brown for details */
+        }
+    
+        footer {
+            text-align: center;
+            padding: 15px;
+            /* Reduced padding */
+            background-color: #4f4534;
+            /* Dark brown footer */
+            color: #f8f1e4;
+            /* Softer beige text */
+            margin-top: 50px;
+            font-size: 0.9rem;
+            /* Reduced font size */
+        }
+    
+        /* Mobile Responsiveness */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2.5rem;
+            }
+    
+            header p {
+                font-size: 1rem;
+            }
+    
+            .day-container h2 {
+                font-size: 2rem;
+            }
+    
+            .meal {
+                flex-direction: column;
+                padding: 15px;
+            }
+    
+            .meal img {
+                max-width: 100%;
+            }
+    
+            .meal-details h3 {
+                font-size: 1.5rem;
+            }
+        }
+    
+        @media (max-width: 480px) {
+            header h1 {
+                font-size: 2rem;
+            }
+    
+            header p {
+                font-size: 0.9rem;
+            }
+    
+            .day-container h2 {
+                font-size: 1.5rem;
+            }
+    
+            .meal-details h3 {
+                font-size: 1.4rem;
+            }
+        }
+    </style>
+    
+
+</head>
+
+<body>
+    <header>
+        <h1>കാലറി ഡെഫിസിറ്റ് മീൽ പ്ലാൻ</h1>
+        <p>എളുപ്പത്തിൽ പാകം ചെയ്യാവുന്ന രുചിയേറിയ, പോഷകീയ ഭക്ഷണങ്ങളിലേക്കുള്ള നിങ്ങളുടെ മാർഗ്ഗദർശി.</p>
+    </header>
+
+    <section class="meal-plan">
+        <!-- Day 1 -->
+        <div class="day-container">
+            <h2>ദിനം - 1</h2>
+            <div class="meal">
+                <img src="https://raw.githubusercontent.com/Nehar-Shinz/Calorie-deficit-Diet/main/Pictures/Vegetable%20Upma.jpg"
+                    alt="വെജിറ്റബിൾ ഉപ്മ" />
+                <div class="meal-details">
+                    <h3>ഒന്നാം ഭക്ഷണം: വെജിറ്റബിൾ ഉപ്മ</h3>
+                    <p><strong>അളവ്:</strong> 1 കപ്പ്</p>
+                    <p><strong>കാലറി:</strong> ~200 കിലോക്കാലറി</p>
+                    <p><strong>പോഷകാംശം:</strong> 5 ഗ്രാം പ്രോട്ടീൻ, 6 ഗ്രാം കൊഴുപ്പ്, 32 ഗ്രാം കാർബുകൾ</p>
+                    <p>
+                        <strong>ചേരുവകൾ:</strong> റവ (സമോലിന), ഉള്ളി, തക്കാളി, പയർ, കാരറ്റ്, കടുക്, കറിവേപ്പില.
+                    </p>
+                    <p>
+                        <strong>പാചകം:</strong> റവ വേവിക്കുക, വെജിറ്റബിൾസും മസാലകളും വേവിച്ചു റവയും വെള്ളവും ചേർത്തു മൃദുവാകുന്നവരെ പാകം ചെയ്യുക.
+                    </p>
+                    <p>
+                        <strong>ഗുണങ്ങൾ:</strong> ചവയ്ക്കാൻ എളുപ്പം, പച്ചക്കറികളിൽ നിന്ന് ഫൈബർ അടങ്ങിയവ.
+                    </p>
+                </div>
+            </div>
+
+            <div class="meal">
+                <img src="https://raw.githubusercontent.com/Nehar-Shinz/Calorie-deficit-Diet/main/Pictures/Paneer%20Bhurji.jpg"
+                    alt="Paneer Bhurji" />
+                <div class="meal-details">
+                    <h3>രണ്ടാം ഭക്ഷണം: പനീർ ബുർജി, ചപ്പാത്തി</h3>
+                    <p>
+                        <strong>അളവ്:</strong> പനീർ ബുർജി (100 ഗ്രാം പനീർ) + 1 ചപ്പാത്തി
+                    </p>
+                    <p><strong>കാലറി:</strong> ~300 കിലോക്കാലറി</p>
+                    <p><strong>പോഷകാംശം:</strong> 15 ഗ്രാം പ്രോട്ടീൻ, 8 ഗ്രാം കൊഴുപ്പ്, 35 ഗ്രാം കാർബുകൾ</p>
+                    <p>
+                        <strong>ചേരുവകൾ:</strong> പനീർ, ഉള്ളി, തക്കാളി, പച്ചമുളക്, മഞ്ഞൾപൊടി, ജീരകം, ആട്ട
+                        ചപ്പാത്തി.
+                    </p>
+                    <p>
+                        <strong>പാചകം:</strong> ഉള്ളിയും തക്കാളിയും മസാലകൾ ചേർത്ത് വേവിക്കുക, പനീർ ചേർത്തു
+                        ചപ്പാത്തിക്കൊപ്പം സെർവ് ചെയ്യുക.
+                    </p>
+                    <p>
+                        <strong>ഗുണങ്ങൾ:</strong> പ്രോട്ടീൻസമൃദ്ധമായ സപോഷണഭക്ഷണം.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="day-container">
+            <h2>ദിനം - 2</h2>
+            <div class="meal">
+                <img src="https://raw.githubusercontent.com/Nehar-Shinz/Calorie-deficit-Diet/main/Pictures/Masala%20Oats.jpg"
+                    alt="മസാല ഓട്സ്" />
+                <div class="meal-details">
+                    <h3>ഒന്നാം ഭക്ഷണം: മസാല ഓട്സ്</h3>
+                    <p><strong>അളവ്:</strong> 1 കപ്പ് പാകം ചെയ്ത പച്ചക്കറി ഓട്സ്</p>
+                    <p><strong>കാലറി:</strong> ~180 കിലോക്കാലറി</p>
+                    <p><strong>പോഷകാംശം:</strong> 7 ഗ്രാം പ്രോട്ടീൻ, 5 ഗ്രാം കൊഴുപ്പ്, 25 ഗ്രാം കാർബുകൾ</p>
+                    <p>
+                        <strong>ചേരുവകൾ:</strong> ഓട്സ്, ഉള്ളി, തക്കാളി, പയർ, കാരറ്റ്, ജീരകം, മല്ലിപ്പൊടി.
+                    </p>
+                    <p>
+                        <strong>പാചകം:</strong> പച്ചക്കറികൾ മസാലയോടൊപ്പം വേവിച്ചു ഓട്സും വെള്ളവും ചേർത്തു പാകം
+                        ചെയ്യുക.
+                    </p>
+                    <p><strong>ഗുണങ്ങൾ:</strong> ഫൈബർസമൃദ്ധം, പാകംചെയ്യാൻ എളുപ്പം.</p>
+                </div>
+            </div>
+
+            <div class="meal">
+                <img src="https://raw.githubusercontent.com/Nehar-Shinz/Calorie-deficit-Diet/main/Pictures/Grilled%20Wrap.jpg"
+                    alt="ഗ്രിൽഡ് ചിക്കൻ റാപ്പ്" />
+                <div class="meal-details">
+                    <h3>രണ്ടാം ഭക്ഷണം: ഗ്രിൽഡ് ചിക്കൻ റാപ്പ് / പനീർ റാപ്പ്</h3>
+                    <p>
+                        <strong>അളവ്:</strong> 100 ഗ്രാം ചിക്കൻ അല്ലെങ്കിൽ പനീർ + 1 ആട്ട ടോർട്ടില
+                    </p>
+                    <p>
+                        <strong>കാലറി:</strong> ~350 കിലോക്കാലറി (ചിക്കൻ) / ~400 കിലോക്കാലറി (പനീർ)
+                    </p>
+                    <p>
+                        <strong>പോഷകാംശം:</strong> 25 ഗ്രാം പ്രോട്ടീൻ (ചിക്കൻ) / 15 ഗ്രാം പ്രോട്ടീൻ (പനീർ), 8 ഗ്രാം
+                        കൊഴുപ്പ്, 30 ഗ്രാം കാർബുകൾ
+                    </p>
+                    <p>
+                        <strong>ചേരുവകൾ:</strong> ഗ്രിൽഡ് ചിക്കൻ അല്ലെങ്കിൽ പനീർ, ആട്ട ടോർട്ടില, ലെറ്റ്യൂസ്,
+                        വെളുത്തുള്ളി ഡ്രസിങ്.
+                    </p>
+                    <p>
+                        <strong>പാചകം:</strong> ചിക്കൻ അല്ലെങ്കിൽ പനീർ ഗ്രിൽ ചെയ്തു, ടോർട്ടിലയിൽ വച്ച്
+                        പച്ചക്കറികളോടെ സർവുചെയ്യുക.
+                    </p>
+                    <p>
+                        <strong>ഗുണങ്ങൾ:</strong> പ്രോട്ടീനുള്ള ഭക്ഷണം, പച്ചക്കറികളോട് കൂടെ.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="day-container">
+            <h2>ദിനം - 3</h2>
+            <div class="meal">
+                <img src="https://raw.githubusercontent.com/Nehar-Shinz/Calorie-deficit-Diet/main/Pictures/Lemon%20Rice.jpg"
+                    alt="Lemon Rice" />
+                <div class="meal-details">
+                    <h3>ഒന്നാം ഭക്ഷണം: ലെമൺ റൈസ്</h3>
+                    <p><strong>അളവ്:</strong> 1 കപ്പ് പാചകം ചെയ്ത ലെമൺ റൈസ്</p>
+                    <p><strong>കലോറി:</strong> ~220 കിലോക്കാലറി</p>
+                    <p><strong>പോഷകങ്ങൾ:</strong> 4g പ്രോട്ടീൻ, 6g കൊഴുപ്പ്, 40g കാർബ്സ്</p>
+                    <p>
+                        <strong>ചേരുവകൾ:</strong> പാചകം ചെയ്ത അരി, ചെറു നാരങ്ങാനീര്, കടുക്, മഞ്ഞൾപ്പൊടി, കറിവേപ്പില,
+                        കടല.
+                    </p>
+                    <p>
+                        <strong>പാചകം:</strong> എണ്ണയിൽ കടുക്, കറിവേപ്പില, കടല എന്നിവ വറുക്കുക. അതിൽ മഞ്ഞൾപ്പൊടി,
+                        പാചകം ചെയ്ത അരി, ചെറു നാരങ്ങാനീര് എന്നിവ ചേർക്കുക. എല്ലാം നന്നായി കലർത്തി കുറച്ച് സമയം വേവിക്കുക.
+                    </p>
+                    <p><strong>ഗുണങ്ങൾ:</strong> ലളിതം, പുളി രുചിയുള്ളത്, തയ്യാറാക്കാൻ എളുപ്പം.</p>
+                </div>
+            </div>
+
+            <div class="meal">
+                <img src="https://raw.githubusercontent.com/Nehar-Shinz/Calorie-deficit-Diet/main/Pictures/Stir%20Fry.jpg"
+                    alt="Chicken Stir Fry" />
+                <div class="meal-details">
+                    <h3>രണ്ടാം ഭക്ഷണം: ചിക്കൻ സ്റ്റിർ ഫ്രൈ / പനീർ സ്റ്റിർ ഫ്രൈ</h3>
+                    <p>
+                        <strong>അളവ്:</strong> 100g ചിക്കൻ അല്ലെങ്കിൽ പനീർ + കലർന്ന പച്ചക്കറികൾ
+                    </p>
+                    <p>
+                        <strong>കലോറി:</strong> ~350 കിലോക്കാലറി (ചിക്കൻ) / ~400 കിലോക്കാലറി (പനീർ)
+                    </p>
+                    <p>
+                        <strong>പോഷകങ്ങൾ:</strong> 25g പ്രോട്ടീൻ (ചിക്കൻ) / 15g പ്രോട്ടീൻ (പനീർ), 10g കൊഴുപ്പ്, 20g
+                        കാർബ്സ്
+                    </p>
+                    <p>
+                        <strong>ചേരുവകൾ:</strong> ചിക്കൻ ബ്രെസ്റ്റ് അല്ലെങ്കിൽ പനീർ, കാപ്സിക്കം, ഉള്ളി, സോയ സോസ്,
+                        വെളുത്തുള്ളി, ഇഞ്ചി.
+                    </p>
+                    <p>
+                        <strong>പാചകം:</strong> വെളുത്തുള്ളി, ഇഞ്ചി, പച്ചക്കറികൾ എന്നിവയോട് കൂടെ ചിക്കൻ അല്ലെങ്കിൽ പനീർ
+                        സ്റ്റിർ ഫ്രൈ ചെയ്യുക. സോയ സോസ് ചേർത്ത് ചിക്കൻ നന്നായി വേവുന്നത് വരെ അല്ലെങ്കിൽ പനീർ ഗോൾഡൻ നിറം
+                        വരുന്നതുവരെ പാകം ചെയ്യുക.
+                    </p>
+                    <p>
+                        <strong>ഗുണങ്ങൾ:</strong> പ്രോട്ടീനിലും പച്ചക്കറികളിലും സമൃദ്ധം, പേശികൾക്ക് മികച്ച പുനരുദ്ധാരണം.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Day 4 -->
+        <div class="day-container">
+            <h2>ദിനം - 4</h2>
+            <div class="meal">
+                <img src="https://raw.githubusercontent.com/Nehar-Shinz/Calorie-deficit-Diet/main/Pictures/Roti%20Sabzi.jpg"
+                    alt="Roti with Vegetable Sabzi" />
+                    <div class="meal-details">
+                        <h3>ഒന്നാം ഭക്ഷണം: ചപ്പാത്തി മിക്സഡ് വെജിറ്റബിൾ കറിയോടൊപ്പം</h3>
+                        <p><strong>അളവ്:</strong> 1 ചപ്പാത്തി + 1 കപ്പ് കറി</p>
+                        <p><strong>കലോറി:</strong> ~250 കിലോക്കാലറി</p>
+                        <p><strong>പോഷകങ്ങൾ:</strong> 7g പ്രോട്ടീൻ, 6g കൊഴുപ്പ്, 40g കാർബ്സ്</p>
+                        <p>
+                            <strong>ചേരുവകൾ:</strong> ചപ്പാത്തി, മിക്സഡ് പച്ചക്കറികൾ (കോളിഫ്ലവർ, പീസ്, ബീൻസ്, തക്കാളി), മസാലകൾ.
+                        </p>
+                        <p>
+                            <strong>പാചകം:</strong> പച്ചക്കറികളും ഉള്ളിയും തക്കാളിയും മസാലകൾ ചേർത്ത് പാചകം ചെയ്യുക.
+                            ചപ്പാത്തിയോടൊപ്പം സെർവ് ചെയ്യുക.
+                        </p>
+                        <p><strong>ഗുണങ്ങൾ:</strong> എളുപ്പമുള്ള, പോഷകസമ്പന്ന ലഘുവായ ഭക്ഷണം.</p>
+                    </div>
+            </div>
+
+            <div class="meal">
+                <img src="https://raw.githubusercontent.com/Nehar-Shinz/Calorie-deficit-Diet/main/Pictures/Egg%20Bhurji.jpg"
+                    alt="Egg Bhurji with Toast" />
+                <div class="meal-details">
+                    <h3>രണ്ടാം ഭക്ഷണം: മുട്ട ബൂർജി / പനീർ ബൂർജി ടോസ്റ്റിനൊപ്പം</h3>
+                    <p><strong>അളവ്:</strong> 2 മുട്ട അല്ലെങ്കിൽ 100g പനീർ + 1 സ്ലൈസ് ടോസ്റ്റ്</p>
+                    <p><strong>കലോറി:</strong> ~300 കിലോക്കാലറി</p>
+                    <p><strong>പോഷകങ്ങൾ:</strong> 20g പ്രോട്ടീൻ, 12g കൊഴുപ്പ്, 25g കാർബ്സ്</p>
+                    <p><strong>ചേരുവകൾ:</strong> മുട്ട അല്ലെങ്കിൽ പനീർ, ഉള്ളി, തക്കാളി, പച്ചമുളക്, മഞ്ഞൾ, ജീരകം,
+                         ടോസ്റ്റ്.</p>
+                    <p><strong>പാചകം:</strong> പച്ചക്കറികളോട് കൂടെ മുട്ട അല്ലെങ്കിൽ പനീർ പാചകം ചെയ്ത്
+                        ടോസ്റ്റിനൊപ്പം നൽകുക.</p>
+                    <p><strong>ഗുണങ്ങൾ:</strong> പ്രോട്ടീനിൽ സമ്പന്നം, കാർബ്സിൽ കുറഞ്ഞത്, വേഗത്തിൽ തയ്യാറാക്കാവുന്ന
+                        സ്നാക്ക്.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Day 5 -->
+        <div class="day-container">
+            <h2>ദിനം - 5</h2>
+            <div class="meal">
+                <img src="https://raw.githubusercontent.com/Nehar-Shinz/Calorie-deficit-Diet/main/Pictures/Curd%20Rice.jpg"
+                    alt="Curd Rice" />
+                <div class="meal-details">
+                    <h3>ഒന്നാം ഭക്ഷണം: തൈര് സാദം</h3>
+                    <p><strong>അളവ്:</strong> 1 കപ്പ്</p>
+                    <p><strong>കലോറി:</strong> ~250 കിലോക്കാലറി</p>
+                    <p><strong>പോഷകങ്ങൾ:</strong> 7g പ്രോട്ടീൻ, 5g കൊഴുപ്പ്, 35g കാർബ്സ്</p>
+                    <p><strong>ചേരുവകൾ:</strong> പാചകം ചെയ്ത അരി, തൈര്, കടുക്, കറിവേപ്പില, പച്ചമുളക്.</p>
+                    <p><strong>പാചകം:</strong> പാചകം ചെയ്ത അരിയിൽ തൈര് ചേർത്ത്, കടുകും കറിവേപ്പിലയും ചേർത്ത്
+                        തൈര് സാദം ഉണ്ടാക്കുക.</p>
+                    <p><strong>ഗുണങ്ങൾ:</strong> തണുപ്പിക്കുന്ന ഭക്ഷണം, പ്രോബയോട്ടിക് സമ്പന്നം, ദഹനത്തിന് നല്ലത്.</p>
+                </div>
+            </div>
+
+            <div class="meal">
+                <img src="https://raw.githubusercontent.com/Nehar-Shinz/Calorie-deficit-Diet/main/Pictures/Veg%20Pulao.jpg"
+                    alt="Vegetable Pulao with Boiled Egg" />
+                <div class="meal-details">
+                    <h3>രണ്ടാം ഭക്ഷണം: പച്ചക്കറി പുലാവും പുഴുങ്ങിയ മുട്ടയും / പനീർ</h3>
+                    <p><strong>അളവ്:</strong> 1 കപ്പ് പുലാവ് + 1 പുഴുങ്ങിയ മുട്ട അല്ലെങ്കിൽ 100g പനീർ</p>
+                    <p><strong>കലോറി:</strong> ~350 കിലോക്കാലറി (മുട്ട) / ~400 കിലോക്കാലറി (പനീർ)</p>
+                    <p><strong>പോഷകങ്ങൾ:</strong> 12g പ്രോട്ടീൻ (മുട്ട) / 15g പ്രോട്ടീൻ (പനീർ), 8g കൊഴുപ്പ്, 40g കാർബ്സ്
+                    </p>
+                    <p><strong>ചേരുവകൾ:</strong> ബസ്മതി അരി, പച്ചക്കറികൾ, ജീരകം, മല്ലി, പുഴുങ്ങിയ മുട്ട
+                        അല്ലെങ്കിൽ പനീർ.</p>
+                    <p><strong>പാചകം:</strong> ജീരകം, മല്ലി, പച്ചക്കറികൾ, ബസ്മതി അരി എന്നിവ ചേർത്ത പുലാവ് ഉണ്ടാക്കുക.
+                        പുഴുങ്ങിയ മുട്ട അല്ലെങ്കിൽ പനീറിനോടൊപ്പം സെർവ് ചെയ്യുക.</p>
+                    <p><strong>ഗുണങ്ങൾ:</strong> കാർബ്സും പ്രോട്ടീനും നന്നായി ബാലൻസ് ചെയ്യുന്നു, വിശപ്പ് മതിയാക്കും.</p>
+                </div>
+            </div>
+        </div>
+        <!-- Day 6 -->
+        <div class="day-container">
+            <h2>ദിനം - 6</h2>
+            <div class="meal">
+                <img src="https://raw.githubusercontent.com/Nehar-Shinz/Calorie-deficit-Diet/main/Pictures/Aloo%20Paratha.jpg"
+                    alt="Aloo Paratha" />
+                <div class="meal-details">
+                    <h3>ഒന്നാം ഭക്ഷണം: ആലൂ പറാത്ത</h3>
+                    <p><strong>അളവ്:</strong> 1 പറാത്ത</p>
+                    <p><strong>കലോറി:</strong> ~250 കിലോക്കാലറി</p>
+                    <p><strong>പോഷകങ്ങൾ:</strong> 5g പ്രോട്ടീൻ, 8g കൊഴുപ്പ്, 40g കാർബ്സ്</p>
+                    <p>
+                        <strong>ചേരുവകൾ:</strong> ഗോതമ്പു മാവ്, ഉരുളക്കിഴങ്ങ്, ജീരകം,
+                        കുരുമുളക്, പച്ചമുളക്.
+                    </p>
+                    <p>
+                        <strong>പാചകം:</strong> ഗോതമ്പു മാവ്, മസാല, ഉരുളകിഴങ്ങ് എന്നിവ ചേർത്തു
+                        പരത്തി കുറഞ്ഞ എണ്ണ ഉപയോഗിച്ച് ചുട്ടെടുക്കുക.
+                    </p>
+                    <p>
+                        <strong>ഗുണങ്ങൾ:</strong> നന്നായി തയ്യാറാക്കിയ സാന്ത്വന ഭക്ഷണം
+                        നിയന്ത്രിത അളവിൽ.
+                    </p>
+                </div>
+            </div>
+
+            <div class="meal">
+                <img src="https://raw.githubusercontent.com/Nehar-Shinz/Calorie-deficit-Diet/main/Pictures/Chicken%20Salad.jpg"
+                    alt="Tandoori Chicken with Salad" />
+                <div class="meal-details">
+                    <h3>രണ്ടാം ഭക്ഷണം: തന്തൂരി ചിക്കൻ / പനീർ സാലഡിനൊപ്പം</h3>
+                    <p>
+                        <strong>അളവ്:</strong> 150g ചിക്കൻ അല്ലെങ്കിൽ 100g പനീർ + 1 കപ്പ് സാലഡ്
+                    </p>
+                    <p>
+                        <strong>കലോറി:</strong> ~350 കിലോക്കാലറി (ചിക്കൻ) / ~400 കിലോക്കാലറി (പനീർ)
+                    </p>
+                    <p>
+                        <strong>പോഷകങ്ങൾ:</strong> 30g പ്രോട്ടീൻ (ചിക്കൻ) / 15g പ്രോട്ടീൻ (പനീർ), 10g കൊഴുപ്പ്, 10g
+                        കാർബ്സ്
+                    </p>
+                    <p>
+                        <strong>ചേരുവകൾ:</strong> ചിക്കൻ അല്ലെങ്കിൽ പനീർ, തൈര്, തന്തൂരി മസാല, നാരങ്ങ, ലെറ്റ്യൂസ്,
+                        വെണ്ടക്ക, ഉള്ളി.
+                    </p>
+                    <p>
+                        <strong>പാചകം:</strong> തൈരിൽ മസാല ചേർത്ത് ചിക്കൻ അല്ലെങ്കിൽ പനീർ മാറിനേറ്റ് ചെയ്യുക, ഗ്രിൽ അല്ലെങ്കിൽ
+                        ബേക്ക് ചെയ്യുക. സാലഡിനൊപ്പം നൽകുക.
+                    </p>
+                    <p>
+                        <strong>ഗുണങ്ങൾ:</strong> പ്രോട്ടീനിൽ സമ്പന്നവും കാർബ്സിൽ കുറവും, ഡയറ്റുകൾക്ക് അനുയോജ്യം.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Day 7 -->
+        <div class="day-container">
+            <h2>ദിനം - 7</h2>
+            <div class="meal">
+                <img src="https://raw.githubusercontent.com/Nehar-Shinz/Calorie-deficit-Diet/main/Pictures/Poha.jpg"
+                    alt="Poha" />
+                <div class="meal-details">
+                    <h3>ഒന്നാം ഭക്ഷണം: പോഹ</h3>
+                    <p><strong>അളവ്:</strong> 1 കപ്പ് പോഹ</p>
+                    <p><strong>കലോറി:</strong> ~180 കിലോക്കാലറി</p>
+                    <p><strong>പോഷകങ്ങൾ:</strong> 4g പ്രോട്ടീൻ, 5g കൊഴുപ്പ്, 30g കാർബ്സ്</p>
+                    <p>
+                        <strong>ചേരുവകൾ:</strong> അരി, പച്ചക്കറികൾ, കടുക്, മഞ്ഞൾപ്പൊടി.
+                    </p>
+                    <p>
+                        <strong>പാചകം:</strong> അരി നന്നായി കഴുകി പാചകം ചെയ്യുക. പച്ചക്കറികളും മസാലകളും ചേർത്ത്
+                        വേവിക്കുക.
+                    </p>
+                    <p><strong>ഗുണങ്ങൾ:</strong> എളുപ്പമുള്ള, പോഷകസമ്പന്ന പച്ചക്കറി നിറഞ്ഞ ഭക്ഷണം.</p>
+                </div>
+            </div>
+
+            <div class="meal">
+                <img src="https://raw.githubusercontent.com/Nehar-Shinz/Calorie-deficit-Diet/main/Pictures/Grilled%20Fish.jpg"
+                    alt="Grilled Fish with Steamed Vegetables" />
+                <div class="meal-details">
+                    <h3>രണ്ടാം ഭക്ഷണം: ഗ്രില്ലഡ് മീൻ / പനീർ സ്റ്റീമ്ട് പച്ചക്കറികളോടൊപ്പം</h3>
+                    <p>
+                        <strong>അളവ്:</strong> 150g മീൻ അല്ലെങ്കിൽ 100g പനീർ + 1 കപ്പ് സ്റ്റീമ്ട് പച്ചക്കറികൾ
+                    </p>
+                    <p>
+                        <strong>കലോറി:</strong> ~300 കിലോക്കാലറി (മീൻ) / ~350 കിലോക്കാലറി (പനീർ)
+                    </p>
+                    <p>
+                        <strong>പോഷകങ്ങൾ:</strong> 30g പ്രോട്ടീൻ (മീൻ) / 15g പ്രോട്ടീൻ (പനീർ), 8g കൊഴുപ്പ്, 15g കാർബ്സ്
+                    </p>
+                    <p>
+                        <strong>ചേരുവകൾ:</strong> വെളുത്ത മീൻ (തിലാപിയ പോലുള്ളത്) അല്ലെങ്കിൽ പനീർ, കാപ്പ്സിക്കം,
+                        കാരറ്റ്, ബ്രൊക്കോളി, ചെറു നാരങ്ങ.
+                    </p>
+                    <p>
+                        <strong>പാചകം:</strong> മീൻ അല്ലെങ്കിൽ പനീർ ഗ്രിൽ ചെയ്യുക, പച്ചക്കറികൾ വേവിക്കുക, ചെറു നാരങ്ങാ
+                        നീരിട്ട്, ചെറു ചൂടായുള്ള പാകം.
+                    </p>
+                    <p>
+                        <strong>ഗുണങ്ങൾ:</strong> ലഘുവായ, പ്രോട്ടീനിൽ സമ്പന്നമായ ഭക്ഷണം, ഡയറ്റുകൾക്ക് അനുയോജ്യം.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+    <footer>
+        <p>
+            &copy; 2024 കാലറി ഡെഫിസിറ്റ് മീൽ പ്ലാൻ by
+            <br>
+            <span style="font-family: 'Caveat', cursive; font-size: 1.5rem;">Nehar Shinz</span>
+            <br>
+            All Rights Reserved | എല്ലാ അവകാശങ്ങളും സംരക്ഷിക്കപ്പെട്ടിരിക്കുന്നു.
+        </p>
+        <br>
+        <p>
+            ഈ വെബ്സൈറ്റിലെ ചിത്രങ്ങൾ Microsoft Bing Image Creator ഉപയോഗിച്ച് AI സാങ്കേതികവിദ്യ
+            ഉത്പാദിപ്പിച്ചവയാണ്, യഥാർത്ഥ വിഭവങ്ങളെ പ്രതിനിധാനം ചെയ്യുന്നതല്ല. കൂടാതെ, ഇവിടെ നൽകിയ പോഷകാഹാരവിവരങ്ങളും കാലറി
+            കണക്കുകളും കൃത്യമല്ലാത്തവ ആകാം. ഇവ തികച്ചും ആർട്ടിസ്റ്റിക് ഉദ്ദേശ്യങ്ങൾക്കായാണ്, പോഷകാഹാര അല്ലെങ്കിൽ ആരോഗ്യ
+            ഉപദേശം അല്ല.
+        </p>
+    </footer>
+
+</body>
